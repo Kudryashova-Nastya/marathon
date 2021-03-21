@@ -46,7 +46,6 @@ p {
     width: 100%;
     height: 40px;
     display: grid;
-    grid-auto-columns: minmax(100px, 20%);
     grid-auto-flow: column;
 }
 
@@ -69,10 +68,12 @@ li {
 a {
     text-decoration: none;
     color: rgba(83, 55, 56, 1);
+    transition: 0.5s;
 }
 
 a:hover {
     text-decoration: underline;
+    transition: 0.5s;
 }
 
 h1 {
@@ -96,17 +97,21 @@ h2 {
     font-weight: 500;
     font-size: 20px;
     display: inline-block;
+    transition: 0.5s;
+
 }
 
 .button-application:hover {
     background: rgba(83, 55, 56, 1);
     color: #CC8B86;
     text-decoration: none;
+    transition: 0.5s;
+
 }
 
 
 #about {
-    background: #E5E5E5;
+    background: rgba(239, 230, 228, 1);
     padding-bottom: 20px;
 }
 
@@ -150,7 +155,7 @@ h2 {
 
 #works {
     padding: 65px 100px;
-    background: #E5E5E5;
+    background: rgba(239, 230, 228, 1);
 }
 
 .works-body {
@@ -168,6 +173,10 @@ h2 {
     background-repeat: no-repeat;
     background-size: 100%;
     color: #FFFFFF;
+}
+
+.works-body div:hover {
+    background: linear-gradient(rgba(100, 72, 69, 0.9), rgba(100, 72, 69, 0.9)), url(media/work.jpg);
 }
 
 .works-body>* {
@@ -197,6 +206,172 @@ h2 {
 #works h2 {
     text-align: left;
     padding-left: 50px;
+}
+
+#team {
+    background: #E2C4BA;
+}
+
+.team-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 38px;
+    padding: 10px 240px;
+    padding-bottom: 41px;
+    margin-bottom: -60px;
+}
+
+#how {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 10px 240px;
+    padding-bottom: 41px;
+}
+
+.step {
+    background: #8D7370;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+}
+
+#how p {
+    text-align: center;
+}
+
+#review {
+    background: rgba(239, 230, 228, 1);
+}
+
+.review-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 22px;
+    padding: 10px 182px;
+    padding-bottom: 41px;
+}
+
+.text-review {
+    margin: auto 0;
+}
+
+.text-review div {
+    width: 407px;
+    line-height: 30px;
+}
+
+.arrow1 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.arrow2 {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    background: rgba(204, 139, 134, 1);
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    line-height: 72px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.img-review {
+    margin-bottom: 17px;
+}
+
+#request {
+    padding: 0 181px;
+    padding-right: 101px;
+    background: #8D7370;
+}
+
+.request-body {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.request-body p {
+    opacity: 0.6;
+}
+
+.request-body input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 18px;
+    line-height: 30px;
+    display: block;
+    width: 100%;
+}
+
+.request-body input:focus {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 18px;
+    line-height: 30px;
+    display: block;
+    width: 100%;
+    color: rgba(246, 237, 233, 1);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    font-weight: normal;
+    outline: none;
+}
+
+.request-body input::placeholder {
+    color: rgba(246, 237, 233, 1);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+.request-body button {
+    padding: 24px 66px;
+    background: #CC8B86;
+    font-weight: 500;
+    font-size: 20px;
+    display: inline-block;
+    transition: 0.5s;
+    color: rgba(83, 55, 56, 1);
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+}
+
+.request-body button:hover {
+    background: rgba(83, 55, 56, 1);
+    color: #CC8B86;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.request-body h2 {
+    text-align: left;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 42px;
+    background: rgba(239, 230, 228, 1);
+    padding: 37px 100px;
+    white-space: nowrap;
 }
 
 @font-face {
